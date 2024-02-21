@@ -1,0 +1,157 @@
+Classfile /home/slvrfx/Documents/ASM/ASMBytecode_JCF/Compare.class
+  Last modified Feb 5, 2024; size 676 bytes
+  MD5 checksum 6f8c125264ca8222d810dcbea93837df
+  Compiled from "Compare.java"
+public class Compare
+  minor version: 0
+  major version: 55
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #6                          // Compare
+  super_class: #7                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #7.#19         // java/lang/Object."<init>":()V
+   #2 = Float              21.127f
+   #3 = Float              20.246f
+   #4 = Fieldref           #20.#21        // java/lang/System.out:Ljava/io/PrintStream;
+   #5 = Methodref          #16.#22        // java/io/PrintStream.println:(Z)V
+   #6 = Class              #23            // Compare
+   #7 = Class              #24            // java/lang/Object
+   #8 = Utf8               <init>
+   #9 = Utf8               ()V
+  #10 = Utf8               Code
+  #11 = Utf8               LineNumberTable
+  #12 = Utf8               main
+  #13 = Utf8               ([Ljava/lang/String;)V
+  #14 = Utf8               StackMapTable
+  #15 = Class              #25            // "[Ljava/lang/String;"
+  #16 = Class              #26            // java/io/PrintStream
+  #17 = Utf8               SourceFile
+  #18 = Utf8               Compare.java
+  #19 = NameAndType        #8:#9          // "<init>":()V
+  #20 = Class              #27            // java/lang/System
+  #21 = NameAndType        #28:#29        // out:Ljava/io/PrintStream;
+  #22 = NameAndType        #30:#31        // println:(Z)V
+  #23 = Utf8               Compare
+  #24 = Utf8               java/lang/Object
+  #25 = Utf8               [Ljava/lang/String;
+  #26 = Utf8               java/io/PrintStream
+  #27 = Utf8               java/lang/System
+  #28 = Utf8               out
+  #29 = Utf8               Ljava/io/PrintStream;
+  #30 = Utf8               println
+  #31 = Utf8               (Z)V
+{
+  public Compare();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 1: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=5, args_size=1
+         0: bipush        10
+         2: istore_1
+         3: bipush        12
+         5: istore_2
+         6: ldc           #2                  // float 21.127f
+         8: fstore_3
+         9: ldc           #3                  // float 20.246f
+        11: fstore        4
+        13: iload_1
+        14: iload_2
+        15: if_icmple     37
+        18: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        21: iload_1
+        22: iload_2
+        23: if_icmple     30
+        26: iconst_1
+        27: goto          31
+        30: iconst_0
+        31: invokevirtual #5                  // Method java/io/PrintStream.println:(Z)V
+        34: goto          53
+        37: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        40: iload_2
+        41: iload_1
+        42: if_icmple     49
+        45: iconst_1
+        46: goto          50
+        49: iconst_0
+        50: invokevirtual #5                  // Method java/io/PrintStream.println:(Z)V
+        53: fload_3
+        54: fload         4
+        56: fcmpl
+        57: ifle          81
+        60: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        63: fload_3
+        64: fload         4
+        66: fcmpl
+        67: ifle          74
+        70: iconst_1
+        71: goto          75
+        74: iconst_0
+        75: invokevirtual #5                  // Method java/io/PrintStream.println:(Z)V
+        78: goto          99
+        81: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        84: fload         4
+        86: fload_3
+        87: fcmpl
+        88: ifle          95
+        91: iconst_1
+        92: goto          96
+        95: iconst_0
+        96: invokevirtual #5                  // Method java/io/PrintStream.println:(Z)V
+        99: return
+      LineNumberTable:
+        line 5: 0
+        line 6: 3
+        line 7: 6
+        line 8: 9
+        line 10: 13
+        line 11: 18
+        line 14: 37
+        line 16: 53
+        line 17: 60
+        line 20: 81
+        line 22: 99
+      StackMapTable: number_of_entries = 12
+        frame_type = 255 /* full_frame */
+          offset_delta = 30
+          locals = [ class "[Ljava/lang/String;", int, int, float, float ]
+          stack = [ class java/io/PrintStream ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 0
+          locals = [ class "[Ljava/lang/String;", int, int, float, float ]
+          stack = [ class java/io/PrintStream, int ]
+        frame_type = 5 /* same */
+        frame_type = 75 /* same_locals_1_stack_item */
+          stack = [ class java/io/PrintStream ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 0
+          locals = [ class "[Ljava/lang/String;", int, int, float, float ]
+          stack = [ class java/io/PrintStream, int ]
+        frame_type = 2 /* same */
+        frame_type = 84 /* same_locals_1_stack_item */
+          stack = [ class java/io/PrintStream ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 0
+          locals = [ class "[Ljava/lang/String;", int, int, float, float ]
+          stack = [ class java/io/PrintStream, int ]
+        frame_type = 5 /* same */
+        frame_type = 77 /* same_locals_1_stack_item */
+          stack = [ class java/io/PrintStream ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 0
+          locals = [ class "[Ljava/lang/String;", int, int, float, float ]
+          stack = [ class java/io/PrintStream, int ]
+        frame_type = 2 /* same */
+}
+SourceFile: "Compare.java"

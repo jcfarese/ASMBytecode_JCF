@@ -1,0 +1,500 @@
+Classfile /home/slvrfx/Documents/ASM/ASMBytecode_JCF/Gen4.class
+  Last modified Feb 13, 2024; size 2420 bytes
+  MD5 checksum 33e33db0fb04f2af877de315d32de21f
+  Compiled from "Gen4.java"
+public class Gen4
+  minor version: 0
+  major version: 55
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #45                         // Gen4
+  super_class: #46                        // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+    #1 = Methodref          #46.#55       // java/lang/Object."<init>":()V
+    #2 = Class              #56           // org/objectweb/asm/ClassWriter
+    #3 = Methodref          #2.#57        // org/objectweb/asm/ClassWriter."<init>":(I)V
+    #4 = Class              #58           // org/objectweb/asm/Opcodes
+    #5 = String             #59           // Program4
+    #6 = String             #60           // java/lang/Object
+    #7 = Methodref          #2.#61        // org/objectweb/asm/ClassWriter.visit:(IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+    #8 = String             #51           // main
+    #9 = String             #52           // ([Ljava/lang/String;)V
+   #10 = Methodref          #2.#62        // org/objectweb/asm/ClassWriter.visitMethod:(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lorg/objectweb/asm/MethodVisitor;
+   #11 = Methodref          #63.#64       // org/objectweb/asm/MethodVisitor.visitCode:()V
+   #12 = Class              #65           // org/objectweb/asm/Label
+   #13 = Methodref          #12.#55       // org/objectweb/asm/Label."<init>":()V
+   #14 = Methodref          #66.#67       // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+   #15 = Methodref          #63.#68       // org/objectweb/asm/MethodVisitor.visitLdcInsn:(Ljava/lang/Object;)V
+   #16 = Methodref          #63.#69       // org/objectweb/asm/MethodVisitor.visitVarInsn:(II)V
+   #17 = Methodref          #63.#70       // org/objectweb/asm/MethodVisitor.visitJumpInsn:(ILorg/objectweb/asm/Label;)V
+   #18 = String             #71           // java/lang/System
+   #19 = String             #72           // out
+   #20 = String             #73           // Ljava/io/PrintStream;
+   #21 = Methodref          #63.#74       // org/objectweb/asm/MethodVisitor.visitFieldInsn:(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+   #22 = String             #75           // java/io/PrintStream
+   #23 = String             #76           // println
+   #24 = String             #77           // (I)V
+   #25 = Methodref          #63.#78       // org/objectweb/asm/MethodVisitor.visitMethodInsn:(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+   #26 = Methodref          #63.#79       // org/objectweb/asm/MethodVisitor.visitLabel:(Lorg/objectweb/asm/Label;)V
+   #27 = Methodref          #80.#81       // java/lang/Short.valueOf:(S)Ljava/lang/Short;
+   #28 = String             #82           // (S)V
+   #29 = Long               1234567890000000000l
+   #31 = Methodref          #83.#84       // java/lang/Long.valueOf:(J)Ljava/lang/Long;
+   #32 = Long               1139453935858433l
+   #34 = String             #85           // (J)V
+   #35 = Methodref          #63.#86       // org/objectweb/asm/MethodVisitor.visitInsn:(I)V
+   #36 = Methodref          #63.#87       // org/objectweb/asm/MethodVisitor.visitMaxs:(II)V
+   #37 = Methodref          #63.#88       // org/objectweb/asm/MethodVisitor.visitEnd:()V
+   #38 = Methodref          #2.#88        // org/objectweb/asm/ClassWriter.visitEnd:()V
+   #39 = Methodref          #2.#89        // org/objectweb/asm/ClassWriter.toByteArray:()[B
+   #40 = String             #90           // Program4.class
+   #41 = Methodref          #91.#92       // utils/Utilities.writeFile:([BLjava/lang/String;)V
+   #42 = Fieldref           #93.#94       // java/lang/System.out:Ljava/io/PrintStream;
+   #43 = String             #95           // Done!
+   #44 = Methodref          #96.#97       // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #45 = Class              #98           // Gen4
+   #46 = Class              #60           // java/lang/Object
+   #47 = Utf8               <init>
+   #48 = Utf8               ()V
+   #49 = Utf8               Code
+   #50 = Utf8               LineNumberTable
+   #51 = Utf8               main
+   #52 = Utf8               ([Ljava/lang/String;)V
+   #53 = Utf8               SourceFile
+   #54 = Utf8               Gen4.java
+   #55 = NameAndType        #47:#48       // "<init>":()V
+   #56 = Utf8               org/objectweb/asm/ClassWriter
+   #57 = NameAndType        #47:#77       // "<init>":(I)V
+   #58 = Utf8               org/objectweb/asm/Opcodes
+   #59 = Utf8               Program4
+   #60 = Utf8               java/lang/Object
+   #61 = NameAndType        #99:#100      // visit:(IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+   #62 = NameAndType        #101:#102     // visitMethod:(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lorg/objectweb/asm/MethodVisitor;
+   #63 = Class              #103          // org/objectweb/asm/MethodVisitor
+   #64 = NameAndType        #104:#48      // visitCode:()V
+   #65 = Utf8               org/objectweb/asm/Label
+   #66 = Class              #105          // java/lang/Integer
+   #67 = NameAndType        #106:#107     // valueOf:(I)Ljava/lang/Integer;
+   #68 = NameAndType        #108:#109     // visitLdcInsn:(Ljava/lang/Object;)V
+   #69 = NameAndType        #110:#111     // visitVarInsn:(II)V
+   #70 = NameAndType        #112:#113     // visitJumpInsn:(ILorg/objectweb/asm/Label;)V
+   #71 = Utf8               java/lang/System
+   #72 = Utf8               out
+   #73 = Utf8               Ljava/io/PrintStream;
+   #74 = NameAndType        #114:#115     // visitFieldInsn:(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+   #75 = Utf8               java/io/PrintStream
+   #76 = Utf8               println
+   #77 = Utf8               (I)V
+   #78 = NameAndType        #116:#117     // visitMethodInsn:(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+   #79 = NameAndType        #118:#119     // visitLabel:(Lorg/objectweb/asm/Label;)V
+   #80 = Class              #120          // java/lang/Short
+   #81 = NameAndType        #106:#121     // valueOf:(S)Ljava/lang/Short;
+   #82 = Utf8               (S)V
+   #83 = Class              #122          // java/lang/Long
+   #84 = NameAndType        #106:#123     // valueOf:(J)Ljava/lang/Long;
+   #85 = Utf8               (J)V
+   #86 = NameAndType        #124:#77      // visitInsn:(I)V
+   #87 = NameAndType        #125:#111     // visitMaxs:(II)V
+   #88 = NameAndType        #126:#48      // visitEnd:()V
+   #89 = NameAndType        #127:#128     // toByteArray:()[B
+   #90 = Utf8               Program4.class
+   #91 = Class              #129          // utils/Utilities
+   #92 = NameAndType        #130:#131     // writeFile:([BLjava/lang/String;)V
+   #93 = Class              #71           // java/lang/System
+   #94 = NameAndType        #72:#73       // out:Ljava/io/PrintStream;
+   #95 = Utf8               Done!
+   #96 = Class              #75           // java/io/PrintStream
+   #97 = NameAndType        #76:#132      // println:(Ljava/lang/String;)V
+   #98 = Utf8               Gen4
+   #99 = Utf8               visit
+  #100 = Utf8               (IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+  #101 = Utf8               visitMethod
+  #102 = Utf8               (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lorg/objectweb/asm/MethodVisitor;
+  #103 = Utf8               org/objectweb/asm/MethodVisitor
+  #104 = Utf8               visitCode
+  #105 = Utf8               java/lang/Integer
+  #106 = Utf8               valueOf
+  #107 = Utf8               (I)Ljava/lang/Integer;
+  #108 = Utf8               visitLdcInsn
+  #109 = Utf8               (Ljava/lang/Object;)V
+  #110 = Utf8               visitVarInsn
+  #111 = Utf8               (II)V
+  #112 = Utf8               visitJumpInsn
+  #113 = Utf8               (ILorg/objectweb/asm/Label;)V
+  #114 = Utf8               visitFieldInsn
+  #115 = Utf8               (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+  #116 = Utf8               visitMethodInsn
+  #117 = Utf8               (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+  #118 = Utf8               visitLabel
+  #119 = Utf8               (Lorg/objectweb/asm/Label;)V
+  #120 = Utf8               java/lang/Short
+  #121 = Utf8               (S)Ljava/lang/Short;
+  #122 = Utf8               java/lang/Long
+  #123 = Utf8               (J)Ljava/lang/Long;
+  #124 = Utf8               visitInsn
+  #125 = Utf8               visitMaxs
+  #126 = Utf8               visitEnd
+  #127 = Utf8               toByteArray
+  #128 = Utf8               ()[B
+  #129 = Utf8               utils/Utilities
+  #130 = Utf8               writeFile
+  #131 = Utf8               ([BLjava/lang/String;)V
+  #132 = Utf8               (Ljava/lang/String;)V
+{
+  public Gen4();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 5: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=7, locals=9, args_size=1
+         0: new           #2                  // class org/objectweb/asm/ClassWriter
+         3: dup
+         4: iconst_2
+         5: invokespecial #3                  // Method org/objectweb/asm/ClassWriter."<init>":(I)V
+         8: astore_1
+         9: aload_1
+        10: bipush        52
+        12: iconst_1
+        13: ldc           #5                  // String Program4
+        15: aconst_null
+        16: ldc           #6                  // String java/lang/Object
+        18: aconst_null
+        19: invokevirtual #7                  // Method org/objectweb/asm/ClassWriter.visit:(IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+        22: aload_1
+        23: bipush        9
+        25: ldc           #8                  // String main
+        27: ldc           #9                  // String ([Ljava/lang/String;)V
+        29: aconst_null
+        30: aconst_null
+        31: invokevirtual #10                 // Method org/objectweb/asm/ClassWriter.visitMethod:(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Lorg/objectweb/asm/MethodVisitor;
+        34: astore_2
+        35: aload_2
+        36: invokevirtual #11                 // Method org/objectweb/asm/MethodVisitor.visitCode:()V
+        39: new           #12                 // class org/objectweb/asm/Label
+        42: dup
+        43: invokespecial #13                 // Method org/objectweb/asm/Label."<init>":()V
+        46: astore_3
+        47: new           #12                 // class org/objectweb/asm/Label
+        50: dup
+        51: invokespecial #13                 // Method org/objectweb/asm/Label."<init>":()V
+        54: astore        4
+        56: new           #12                 // class org/objectweb/asm/Label
+        59: dup
+        60: invokespecial #13                 // Method org/objectweb/asm/Label."<init>":()V
+        63: astore        5
+        65: new           #12                 // class org/objectweb/asm/Label
+        68: dup
+        69: invokespecial #13                 // Method org/objectweb/asm/Label."<init>":()V
+        72: astore        6
+        74: new           #12                 // class org/objectweb/asm/Label
+        77: dup
+        78: invokespecial #13                 // Method org/objectweb/asm/Label."<init>":()V
+        81: astore        7
+        83: new           #12                 // class org/objectweb/asm/Label
+        86: dup
+        87: invokespecial #13                 // Method org/objectweb/asm/Label."<init>":()V
+        90: astore        8
+        92: aload_2
+        93: bipush        40
+        95: invokestatic  #14                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        98: invokevirtual #15                 // Method org/objectweb/asm/MethodVisitor.visitLdcInsn:(Ljava/lang/Object;)V
+       101: aload_2
+       102: bipush        54
+       104: iconst_1
+       105: invokevirtual #16                 // Method org/objectweb/asm/MethodVisitor.visitVarInsn:(II)V
+       108: aload_2
+       109: bipush        20
+       111: invokestatic  #14                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       114: invokevirtual #15                 // Method org/objectweb/asm/MethodVisitor.visitLdcInsn:(Ljava/lang/Object;)V
+       117: aload_2
+       118: bipush        54
+       120: iconst_2
+       121: invokevirtual #16                 // Method org/objectweb/asm/MethodVisitor.visitVarInsn:(II)V
+       124: aload_2
+       125: bipush        21
+       127: iconst_1
+       128: invokevirtual #16                 // Method org/objectweb/asm/MethodVisitor.visitVarInsn:(II)V
+       131: aload_2
+       132: bipush        21
+       134: iconst_2
+       135: invokevirtual #16                 // Method org/objectweb/asm/MethodVisitor.visitVarInsn:(II)V
+       138: aload_2
+       139: sipush        163
+       142: aload_3
+       143: invokevirtual #17                 // Method org/objectweb/asm/MethodVisitor.visitJumpInsn:(ILorg/objectweb/asm/Label;)V
+       146: aload_2
+       147: sipush        178
+       150: ldc           #18                 // String java/lang/System
+       152: ldc           #19                 // String out
+       154: ldc           #20                 // String Ljava/io/PrintStream;
+       156: invokevirtual #21                 // Method org/objectweb/asm/MethodVisitor.visitFieldInsn:(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+       159: aload_2
+       160: bipush        21
+       162: iconst_2
+       163: invokevirtual #16                 // Method org/objectweb/asm/MethodVisitor.visitVarInsn:(II)V
+       166: aload_2
+       167: sipush        182
+       170: ldc           #22                 // String java/io/PrintStream
+       172: ldc           #23                 // String println
+       174: ldc           #24                 // String (I)V
+       176: iconst_0
+       177: invokevirtual #25                 // Method org/objectweb/asm/MethodVisitor.visitMethodInsn:(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+       180: aload_2
+       181: sipush        167
+       184: aload         6
+       186: invokevirtual #17                 // Method org/objectweb/asm/MethodVisitor.visitJumpInsn:(ILorg/objectweb/asm/Label;)V
+       189: aload_2
+       190: aload_3
+       191: invokevirtual #26                 // Method org/objectweb/asm/MethodVisitor.visitLabel:(Lorg/objectweb/asm/Label;)V
+       194: aload_2
+       195: sipush        178
+       198: ldc           #18                 // String java/lang/System
+       200: ldc           #19                 // String out
+       202: ldc           #20                 // String Ljava/io/PrintStream;
+       204: invokevirtual #21                 // Method org/objectweb/asm/MethodVisitor.visitFieldInsn:(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+       207: aload_2
+       208: bipush        21
+       210: iconst_1
+       211: invokevirtual #16                 // Method org/objectweb/asm/MethodVisitor.visitVarInsn:(II)V
+       214: aload_2
+       215: sipush        182
+       218: ldc           #22                 // String java/io/PrintStream
+       220: ldc           #23                 // String println
+       222: ldc           #24                 // String (I)V
+       224: iconst_0
+       225: invokevirtual #25                 // Method org/objectweb/asm/MethodVisitor.visitMethodInsn:(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+       228: aload_2
+       229: sipush        1111
+       232: invokestatic  #27                 // Method java/lang/Short.valueOf:(S)Ljava/lang/Short;
+       235: invokevirtual #15                 // Method org/objectweb/asm/MethodVisitor.visitLdcInsn:(Ljava/lang/Object;)V
+       238: aload_2
+       239: bipush        54
+       241: iconst_3
+       242: invokevirtual #16                 // Method org/objectweb/asm/MethodVisitor.visitVarInsn:(II)V
+       245: aload_2
+       246: sipush        2222
+       249: invokestatic  #27                 // Method java/lang/Short.valueOf:(S)Ljava/lang/Short;
+       252: invokevirtual #15                 // Method org/objectweb/asm/MethodVisitor.visitLdcInsn:(Ljava/lang/Object;)V
+       255: aload_2
+       256: bipush        54
+       258: iconst_4
+       259: invokevirtual #16                 // Method org/objectweb/asm/MethodVisitor.visitVarInsn:(II)V
+       262: aload_2
+       263: bipush        21
+       265: iconst_3
+       266: invokevirtual #16                 // Method org/objectweb/asm/MethodVisitor.visitVarInsn:(II)V
+       269: aload_2
+       270: bipush        21
+       272: iconst_4
+       273: invokevirtual #16                 // Method org/objectweb/asm/MethodVisitor.visitVarInsn:(II)V
+       276: aload_2
+       277: sipush        163
+       280: aload         4
+       282: invokevirtual #17                 // Method org/objectweb/asm/MethodVisitor.visitJumpInsn:(ILorg/objectweb/asm/Label;)V
+       285: aload_2
+       286: sipush        178
+       289: ldc           #18                 // String java/lang/System
+       291: ldc           #19                 // String out
+       293: ldc           #20                 // String Ljava/io/PrintStream;
+       295: invokevirtual #21                 // Method org/objectweb/asm/MethodVisitor.visitFieldInsn:(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+       298: aload_2
+       299: bipush        21
+       301: iconst_4
+       302: invokevirtual #16                 // Method org/objectweb/asm/MethodVisitor.visitVarInsn:(II)V
+       305: aload_2
+       306: sipush        182
+       309: ldc           #22                 // String java/io/PrintStream
+       311: ldc           #23                 // String println
+       313: ldc           #28                 // String (S)V
+       315: iconst_0
+       316: invokevirtual #25                 // Method org/objectweb/asm/MethodVisitor.visitMethodInsn:(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+       319: aload_2
+       320: sipush        167
+       323: aload         7
+       325: invokevirtual #17                 // Method org/objectweb/asm/MethodVisitor.visitJumpInsn:(ILorg/objectweb/asm/Label;)V
+       328: aload_2
+       329: aload         4
+       331: invokevirtual #26                 // Method org/objectweb/asm/MethodVisitor.visitLabel:(Lorg/objectweb/asm/Label;)V
+       334: aload_2
+       335: sipush        178
+       338: ldc           #18                 // String java/lang/System
+       340: ldc           #19                 // String out
+       342: ldc           #20                 // String Ljava/io/PrintStream;
+       344: invokevirtual #21                 // Method org/objectweb/asm/MethodVisitor.visitFieldInsn:(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+       347: aload_2
+       348: bipush        21
+       350: iconst_3
+       351: invokevirtual #16                 // Method org/objectweb/asm/MethodVisitor.visitVarInsn:(II)V
+       354: aload_2
+       355: sipush        182
+       358: ldc           #22                 // String java/io/PrintStream
+       360: ldc           #23                 // String println
+       362: ldc           #28                 // String (S)V
+       364: iconst_0
+       365: invokevirtual #25                 // Method org/objectweb/asm/MethodVisitor.visitMethodInsn:(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+       368: aload_2
+       369: ldc2_w        #29                 // long 1234567890000000000l
+       372: invokestatic  #31                 // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+       375: invokevirtual #15                 // Method org/objectweb/asm/MethodVisitor.visitLdcInsn:(Ljava/lang/Object;)V
+       378: aload_2
+       379: bipush        55
+       381: iconst_5
+       382: invokevirtual #16                 // Method org/objectweb/asm/MethodVisitor.visitVarInsn:(II)V
+       385: aload_2
+       386: ldc2_w        #32                 // long 1139453935858433l
+       389: invokestatic  #31                 // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+       392: invokevirtual #15                 // Method org/objectweb/asm/MethodVisitor.visitLdcInsn:(Ljava/lang/Object;)V
+       395: aload_2
+       396: bipush        55
+       398: bipush        7
+       400: invokevirtual #16                 // Method org/objectweb/asm/MethodVisitor.visitVarInsn:(II)V
+       403: aload_2
+       404: bipush        22
+       406: iconst_5
+       407: invokevirtual #16                 // Method org/objectweb/asm/MethodVisitor.visitVarInsn:(II)V
+       410: aload_2
+       411: bipush        22
+       413: bipush        7
+       415: invokevirtual #16                 // Method org/objectweb/asm/MethodVisitor.visitVarInsn:(II)V
+       418: aload_2
+       419: sipush        157
+       422: aload         5
+       424: invokevirtual #17                 // Method org/objectweb/asm/MethodVisitor.visitJumpInsn:(ILorg/objectweb/asm/Label;)V
+       427: aload_2
+       428: sipush        178
+       431: ldc           #18                 // String java/lang/System
+       433: ldc           #19                 // String out
+       435: ldc           #20                 // String Ljava/io/PrintStream;
+       437: invokevirtual #21                 // Method org/objectweb/asm/MethodVisitor.visitFieldInsn:(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+       440: aload_2
+       441: bipush        22
+       443: bipush        7
+       445: invokevirtual #16                 // Method org/objectweb/asm/MethodVisitor.visitVarInsn:(II)V
+       448: aload_2
+       449: sipush        182
+       452: ldc           #22                 // String java/io/PrintStream
+       454: ldc           #23                 // String println
+       456: ldc           #34                 // String (J)V
+       458: iconst_0
+       459: invokevirtual #25                 // Method org/objectweb/asm/MethodVisitor.visitMethodInsn:(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+       462: aload_2
+       463: sipush        167
+       466: aload         8
+       468: invokevirtual #17                 // Method org/objectweb/asm/MethodVisitor.visitJumpInsn:(ILorg/objectweb/asm/Label;)V
+       471: aload_2
+       472: aload         5
+       474: invokevirtual #26                 // Method org/objectweb/asm/MethodVisitor.visitLabel:(Lorg/objectweb/asm/Label;)V
+       477: aload_2
+       478: sipush        178
+       481: ldc           #18                 // String java/lang/System
+       483: ldc           #19                 // String out
+       485: ldc           #20                 // String Ljava/io/PrintStream;
+       487: invokevirtual #21                 // Method org/objectweb/asm/MethodVisitor.visitFieldInsn:(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+       490: aload_2
+       491: bipush        21
+       493: iconst_5
+       494: invokevirtual #16                 // Method org/objectweb/asm/MethodVisitor.visitVarInsn:(II)V
+       497: aload_2
+       498: sipush        182
+       501: ldc           #22                 // String java/io/PrintStream
+       503: ldc           #23                 // String println
+       505: ldc           #34                 // String (J)V
+       507: iconst_0
+       508: invokevirtual #25                 // Method org/objectweb/asm/MethodVisitor.visitMethodInsn:(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+       511: aload_2
+       512: sipush        177
+       515: invokevirtual #35                 // Method org/objectweb/asm/MethodVisitor.visitInsn:(I)V
+       518: aload_2
+       519: iconst_0
+       520: iconst_0
+       521: invokevirtual #36                 // Method org/objectweb/asm/MethodVisitor.visitMaxs:(II)V
+       524: aload_2
+       525: invokevirtual #37                 // Method org/objectweb/asm/MethodVisitor.visitEnd:()V
+       528: aload_1
+       529: invokevirtual #38                 // Method org/objectweb/asm/ClassWriter.visitEnd:()V
+       532: aload_1
+       533: invokevirtual #39                 // Method org/objectweb/asm/ClassWriter.toByteArray:()[B
+       536: astore_2
+       537: aload_2
+       538: ldc           #40                 // String Program4.class
+       540: invokestatic  #41                 // Method utils/Utilities.writeFile:([BLjava/lang/String;)V
+       543: getstatic     #42                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       546: ldc           #43                 // String Done!
+       548: invokevirtual #44                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       551: return
+      LineNumberTable:
+        line 9: 0
+        line 10: 9
+        line 18: 22
+        line 19: 35
+        line 21: 39
+        line 22: 47
+        line 23: 56
+        line 24: 65
+        line 25: 74
+        line 26: 83
+        line 28: 92
+        line 29: 101
+        line 30: 108
+        line 31: 117
+        line 32: 124
+        line 33: 131
+        line 34: 138
+        line 35: 146
+        line 36: 159
+        line 37: 166
+        line 38: 180
+        line 40: 189
+        line 41: 194
+        line 42: 207
+        line 43: 214
+        line 46: 228
+        line 47: 238
+        line 48: 245
+        line 49: 255
+        line 50: 262
+        line 51: 269
+        line 52: 276
+        line 53: 285
+        line 54: 298
+        line 55: 305
+        line 56: 319
+        line 58: 328
+        line 59: 334
+        line 60: 347
+        line 61: 354
+        line 64: 368
+        line 65: 378
+        line 66: 385
+        line 67: 395
+        line 68: 403
+        line 69: 410
+        line 70: 418
+        line 71: 427
+        line 72: 440
+        line 73: 448
+        line 74: 462
+        line 76: 471
+        line 77: 477
+        line 78: 490
+        line 79: 497
+        line 82: 511
+        line 83: 518
+        line 84: 524
+        line 88: 528
+        line 90: 532
+        line 92: 537
+        line 94: 543
+        line 96: 551
+}
+SourceFile: "Gen4.java"

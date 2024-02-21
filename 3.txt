@@ -1,0 +1,49 @@
+public class Program3 {
+  public static void main(java.lang.String[]);
+    Code:
+       0: ldc           #7                  // int 40
+       2: istore_1
+       3: ldc           #8                  // int 20
+       5: istore_2
+       6: iload_1
+       7: iload_2
+       8: idiv
+       9: istore_3
+      10: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+      13: iload_3
+      14: invokevirtual #20                 // Method java/io/PrintStream.println:(I)V
+      17: ldc           #21                 // float 21.127f
+      19: fstore        4
+      21: ldc           #22                 // float 20.456f
+      23: fstore        5
+      25: fload         4
+      27: fload         5
+      29: fdiv
+      30: fstore        6
+      32: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+      35: fload         6
+      37: invokevirtual #25                 // Method java/io/PrintStream.println:(F)V
+      40: ldc2_w        #26                 // double 173.43d
+      43: dstore        7
+      45: ldc2_w        #28                 // double 45.56d
+      48: dstore        9
+      50: dload         7
+      52: dload         9
+      54: ddiv
+      55: dstore        11
+      57: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+      60: dload         11
+      62: invokevirtual #32                 // Method java/io/PrintStream.println:(D)V
+      65: ldc2_w        #33                 // long 1234567890000000000l
+      68: lstore        13
+      70: ldc2_w        #35                 // long 1139453935858433l
+      73: lstore        15
+      75: lload         13
+      77: lload         15
+      79: ldiv
+      80: lstore        17
+      82: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+      85: lload         17
+      87: invokevirtual #39                 // Method java/io/PrintStream.println:(J)V
+      90: return
+}

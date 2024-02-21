@@ -1,0 +1,173 @@
+Classfile /home/slvrfx/Documents/ASM/ASMBytecode_JCF/Ascanner.class
+  Last modified Feb 17, 2024; size 1385 bytes
+  MD5 checksum bda15a4a4855bee31530543d13da81fc
+  Compiled from "Ascanner.java"
+public class Ascanner
+  minor version: 0
+  major version: 55
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #16                         // Ascanner
+  super_class: #17                        // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+   #1 = Methodref          #17.#26        // java/lang/Object."<init>":()V
+   #2 = Class              #27            // java/util/Scanner
+   #3 = Fieldref           #28.#29        // java/lang/System.in:Ljava/io/InputStream;
+   #4 = Methodref          #2.#30         // java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+   #5 = Fieldref           #28.#31        // java/lang/System.out:Ljava/io/PrintStream;
+   #6 = String             #32            // Please enter an integer
+   #7 = Methodref          #33.#34        // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #8 = Methodref          #2.#35         // java/util/Scanner.nextInt:()I
+   #9 = String             #36            // Please enter a long
+  #10 = Methodref          #2.#37         // java/util/Scanner.nextLong:()J
+  #11 = String             #38            // Please entr a double
+  #12 = Methodref          #2.#39         // java/util/Scanner.nextDouble:()D
+  #13 = InvokeDynamic      #0:#43         // #0:makeConcatWithConstants:(I)Ljava/lang/String;
+  #14 = InvokeDynamic      #1:#45         // #1:makeConcatWithConstants:(J)Ljava/lang/String;
+  #15 = InvokeDynamic      #2:#47         // #2:makeConcatWithConstants:(D)Ljava/lang/String;
+  #16 = Class              #48            // Ascanner
+  #17 = Class              #49            // java/lang/Object
+  #18 = Utf8               <init>
+  #19 = Utf8               ()V
+  #20 = Utf8               Code
+  #21 = Utf8               LineNumberTable
+  #22 = Utf8               main
+  #23 = Utf8               ([Ljava/lang/String;)V
+  #24 = Utf8               SourceFile
+  #25 = Utf8               Ascanner.java
+  #26 = NameAndType        #18:#19        // "<init>":()V
+  #27 = Utf8               java/util/Scanner
+  #28 = Class              #50            // java/lang/System
+  #29 = NameAndType        #51:#52        // in:Ljava/io/InputStream;
+  #30 = NameAndType        #18:#53        // "<init>":(Ljava/io/InputStream;)V
+  #31 = NameAndType        #54:#55        // out:Ljava/io/PrintStream;
+  #32 = Utf8               Please enter an integer
+  #33 = Class              #56            // java/io/PrintStream
+  #34 = NameAndType        #57:#58        // println:(Ljava/lang/String;)V
+  #35 = NameAndType        #59:#60        // nextInt:()I
+  #36 = Utf8               Please enter a long
+  #37 = NameAndType        #61:#62        // nextLong:()J
+  #38 = Utf8               Please entr a double
+  #39 = NameAndType        #63:#64        // nextDouble:()D
+  #40 = Utf8               BootstrapMethods
+  #41 = MethodHandle       6:#65          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #42 = String             #66            // The integer you entered is: \u0001
+  #43 = NameAndType        #67:#68        // makeConcatWithConstants:(I)Ljava/lang/String;
+  #44 = String             #69            // The long you entered is: \u0001
+  #45 = NameAndType        #67:#70        // makeConcatWithConstants:(J)Ljava/lang/String;
+  #46 = String             #71            // The double you entered is: \u0001
+  #47 = NameAndType        #67:#72        // makeConcatWithConstants:(D)Ljava/lang/String;
+  #48 = Utf8               Ascanner
+  #49 = Utf8               java/lang/Object
+  #50 = Utf8               java/lang/System
+  #51 = Utf8               in
+  #52 = Utf8               Ljava/io/InputStream;
+  #53 = Utf8               (Ljava/io/InputStream;)V
+  #54 = Utf8               out
+  #55 = Utf8               Ljava/io/PrintStream;
+  #56 = Utf8               java/io/PrintStream
+  #57 = Utf8               println
+  #58 = Utf8               (Ljava/lang/String;)V
+  #59 = Utf8               nextInt
+  #60 = Utf8               ()I
+  #61 = Utf8               nextLong
+  #62 = Utf8               ()J
+  #63 = Utf8               nextDouble
+  #64 = Utf8               ()D
+  #65 = Methodref          #73.#74        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #66 = Utf8               The integer you entered is: \u0001
+  #67 = Utf8               makeConcatWithConstants
+  #68 = Utf8               (I)Ljava/lang/String;
+  #69 = Utf8               The long you entered is: \u0001
+  #70 = Utf8               (J)Ljava/lang/String;
+  #71 = Utf8               The double you entered is: \u0001
+  #72 = Utf8               (D)Ljava/lang/String;
+  #73 = Class              #75            // java/lang/invoke/StringConcatFactory
+  #74 = NameAndType        #67:#79        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #75 = Utf8               java/lang/invoke/StringConcatFactory
+  #76 = Class              #81            // java/lang/invoke/MethodHandles$Lookup
+  #77 = Utf8               Lookup
+  #78 = Utf8               InnerClasses
+  #79 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #80 = Class              #82            // java/lang/invoke/MethodHandles
+  #81 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #82 = Utf8               java/lang/invoke/MethodHandles
+{
+  public Ascanner();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=7, args_size=1
+         0: new           #2                  // class java/util/Scanner
+         3: dup
+         4: getstatic     #3                  // Field java/lang/System.in:Ljava/io/InputStream;
+         7: invokespecial #4                  // Method java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+        10: astore_1
+        11: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        14: ldc           #6                  // String Please enter an integer
+        16: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        19: aload_1
+        20: invokevirtual #8                  // Method java/util/Scanner.nextInt:()I
+        23: istore_2
+        24: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        27: ldc           #9                  // String Please enter a long
+        29: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        32: aload_1
+        33: invokevirtual #10                 // Method java/util/Scanner.nextLong:()J
+        36: lstore_3
+        37: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        40: ldc           #11                 // String Please entr a double
+        42: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        45: aload_1
+        46: invokevirtual #12                 // Method java/util/Scanner.nextDouble:()D
+        49: dstore        5
+        51: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        54: iload_2
+        55: invokedynamic #13,  0             // InvokeDynamic #0:makeConcatWithConstants:(I)Ljava/lang/String;
+        60: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        63: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        66: lload_3
+        67: invokedynamic #14,  0             // InvokeDynamic #1:makeConcatWithConstants:(J)Ljava/lang/String;
+        72: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        75: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        78: dload         5
+        80: invokedynamic #15,  0             // InvokeDynamic #2:makeConcatWithConstants:(D)Ljava/lang/String;
+        85: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        88: return
+      LineNumberTable:
+        line 7: 0
+        line 9: 11
+        line 10: 19
+        line 12: 24
+        line 13: 32
+        line 15: 37
+        line 16: 45
+        line 18: 51
+        line 19: 63
+        line 20: 75
+        line 22: 88
+}
+SourceFile: "Ascanner.java"
+InnerClasses:
+  public static final #77= #76 of #80;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+BootstrapMethods:
+  0: #41 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #42 The integer you entered is: \u0001
+  1: #41 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #44 The long you entered is: \u0001
+  2: #41 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #46 The double you entered is: \u0001

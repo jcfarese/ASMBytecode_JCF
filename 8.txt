@@ -1,0 +1,112 @@
+Classfile /home/slvrfx/Documents/ASM/ASMBytecode_JCF/AIfThenElse.class
+  Last modified Feb 19, 2024; size 721 bytes
+  MD5 checksum 1d9fabd4cb62b5c2611e1ea4ffe1050a
+  Compiled from "AIfThenElse.java"
+public class AIfThenElse
+  minor version: 0
+  major version: 55
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #11                         // AIfThenElse
+  super_class: #12                        // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #12.#22        // java/lang/Object."<init>":()V
+   #2 = Class              #23            // java/util/Scanner
+   #3 = Fieldref           #24.#25        // java/lang/System.in:Ljava/io/InputStream;
+   #4 = Methodref          #2.#26         // java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+   #5 = Fieldref           #24.#27        // java/lang/System.out:Ljava/io/PrintStream;
+   #6 = String             #28            // Please type an integer
+   #7 = Methodref          #29.#30        // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #8 = Methodref          #2.#31         // java/util/Scanner.nextInt:()I
+   #9 = String             #32            // int is less than 10
+  #10 = String             #33            // int is equal to or greater than 10
+  #11 = Class              #34            // AIfThenElse
+  #12 = Class              #35            // java/lang/Object
+  #13 = Utf8               <init>
+  #14 = Utf8               ()V
+  #15 = Utf8               Code
+  #16 = Utf8               LineNumberTable
+  #17 = Utf8               main
+  #18 = Utf8               ([Ljava/lang/String;)V
+  #19 = Utf8               StackMapTable
+  #20 = Utf8               SourceFile
+  #21 = Utf8               AIfThenElse.java
+  #22 = NameAndType        #13:#14        // "<init>":()V
+  #23 = Utf8               java/util/Scanner
+  #24 = Class              #36            // java/lang/System
+  #25 = NameAndType        #37:#38        // in:Ljava/io/InputStream;
+  #26 = NameAndType        #13:#39        // "<init>":(Ljava/io/InputStream;)V
+  #27 = NameAndType        #40:#41        // out:Ljava/io/PrintStream;
+  #28 = Utf8               Please type an integer
+  #29 = Class              #42            // java/io/PrintStream
+  #30 = NameAndType        #43:#44        // println:(Ljava/lang/String;)V
+  #31 = NameAndType        #45:#46        // nextInt:()I
+  #32 = Utf8               int is less than 10
+  #33 = Utf8               int is equal to or greater than 10
+  #34 = Utf8               AIfThenElse
+  #35 = Utf8               java/lang/Object
+  #36 = Utf8               java/lang/System
+  #37 = Utf8               in
+  #38 = Utf8               Ljava/io/InputStream;
+  #39 = Utf8               (Ljava/io/InputStream;)V
+  #40 = Utf8               out
+  #41 = Utf8               Ljava/io/PrintStream;
+  #42 = Utf8               java/io/PrintStream
+  #43 = Utf8               println
+  #44 = Utf8               (Ljava/lang/String;)V
+  #45 = Utf8               nextInt
+  #46 = Utf8               ()I
+{
+  public AIfThenElse();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=3, args_size=1
+         0: new           #2                  // class java/util/Scanner
+         3: dup
+         4: getstatic     #3                  // Field java/lang/System.in:Ljava/io/InputStream;
+         7: invokespecial #4                  // Method java/util/Scanner."<init>":(Ljava/io/InputStream;)V
+        10: astore_1
+        11: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        14: ldc           #6                  // String Please type an integer
+        16: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        19: aload_1
+        20: invokevirtual #8                  // Method java/util/Scanner.nextInt:()I
+        23: istore_2
+        24: iload_2
+        25: bipush        10
+        27: if_icmpge     41
+        30: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        33: ldc           #9                  // String int is less than 10
+        35: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        38: goto          49
+        41: getstatic     #5                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        44: ldc           #10                 // String int is equal to or greater than 10
+        46: invokevirtual #7                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        49: return
+      LineNumberTable:
+        line 8: 0
+        line 10: 11
+        line 11: 19
+        line 13: 24
+        line 15: 30
+        line 19: 41
+        line 23: 49
+      StackMapTable: number_of_entries = 2
+        frame_type = 253 /* append */
+          offset_delta = 41
+          locals = [ class java/util/Scanner, int ]
+        frame_type = 7 /* same */
+}
+SourceFile: "AIfThenElse.java"
